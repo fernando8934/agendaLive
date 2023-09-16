@@ -1,0 +1,66 @@
+<mat-tab-group mat-align-tabs="start" style="padding-top: 40px;padding-left: 2%;padding-right: 2%;">
+    <mat-tab label="PROXIMAS">
+      <div fxLayout="row" fxLayoutAlign="start center" style=" padding: 2%;" >
+        <ng-container *ngFor="let livesNext of livesNext" style="margin: 0,5%">
+ 
+          <mat-card class="mat-card-live" fxflex="0 1 calc(33.3% - 11px)"
+          fxflex.lt-md="0 1 calc(50% - 11px)"
+          fxflex.lt-sm="100%">
+
+            <mat-card-title class="mart-card-title-live">
+             <div class="row" >
+               <p>
+                   <span style="font-size: 0.9rem;" fxflex="70" fxlayoutAlign="start center">{{livesNext.liveName}}</span>
+                   <span fxflex=""></span>
+                   <span style="font-size: 0.7rem;" fxflex="25" fxlayoutAlign="end center">{{livesNext.liveDate}}</span>
+               </p>
+               <p style="font-size: 0.7rem;">
+                 canal: <span>{{livesNext.channelName}}</span>
+               </p>
+ 
+             </div>
+            </mat-card-title>
+            <mat-card-content fxLayoutAlign="center center">
+              <div>
+              <!-- <iframe width="560" height="315" [src]="livesNext.urlSafe" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allo
+               ></iframe> -->
+              </div>
+            </mat-card-content>
+          </mat-card>
+         </ng-container>
+      </div>
+    </mat-tab>
+    <mat-tab label="REALIZADAS">
+      <div fxLayout="row wrap" fxLayoutAlign="start center" style=" padding: 2%;" >
+        <ng-container *ngFor="let live of livesPrevious" style="margin: 0,5%">
+ 
+         <mat-card class="mat-card-live" fxflex="0 1 calc(33.3% - 11px)"
+         fxflex.lt-md="0 1 calc(50% - 11px)"
+         fxflex.lt-sm="100%">
+ 
+           <mat-card-title class="mart-card-title-live">
+            <div class="row" >
+              <p>
+                  <span style="font-size: 0.9rem;" fxflex="70" fxlayoutAlign="start center">{{live.liveName}}</span>
+                  <span fxflex=""></span>
+                  <span style="font-size: 0.7rem;" fxflex="25" fxlayoutAlign="end center">{{live.liveDate}}</span>
+              </p>
+              <p style="font-size: 0.7rem;">
+                canal: <span>{{live.channelName}}</span>
+              </p>
+
+            </div>
+           </mat-card-title>
+           <mat-card-content fxLayoutAlign="center center">
+             <div>
+             <!-- <iframe width="560" height="315" [src]="live.urlSafe" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allo
+              ></iframe> -->
+             </div>
+           </mat-card-content>
+         </mat-card>
+        </ng-container>
+       </div>
+     </mat-tab>
+    </mat-tab-group>
+     
+  
