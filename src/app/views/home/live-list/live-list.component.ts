@@ -22,32 +22,32 @@ export class LiveListComponent implements OnInit {
   ngOnInit(): void {
     // this.getLives();
     this.livesPrevious = [{
-      id : 'ID',
-     liveName : 'liveNamePrevious',
-     channelName : 'channelName',
-     liveDate : 'liveDate',
-     liveTime : 'liveTime',
+      id : '001',
+     liveName : 'la ele 1000x',
+     channelName : 'como seu disco',
+     liveDate : '25/12/2023',
+     liveTime : '16:20',
      liveLink : 'liveLink',
-     registrationDate : 'registrationDate',
+     registrationDate : '05/10/2023',
      urlSafe : '',
     },
     {
-      id : 'ID',
-     liveName : 'liveNamePrevious',
-     channelName : 'channelName',
-     liveDate : 'liveDate',
-     liveTime : 'liveTime',
+      id : '002',
+     liveName : 'como apertar a ganja',
+     channelName : 'passa a bola',
+     liveDate : '20/11/2023',
+     liveTime : '0:40',
      liveLink : 'liveLink',
-     registrationDate : 'registrationDate',
+     registrationDate : '05/10/2023',
      urlSafe : '',
     }
   ]
 
     this.livesNext = [{
-      id : 'IDNext',
-     liveName : 'liveNameNext',
-     channelName : 'channelName',
-     liveDate : 'liveDate',
+      id : '003',
+     liveName : 'aprenda a tocar violão',
+     channelName : 'com Fernando lindo',
+     liveDate : '07/11/2023',
      liveTime : 'liveTime',
      liveLink : 'liveLink',
      registrationDate : 'registrationDate',
@@ -55,10 +55,10 @@ export class LiveListComponent implements OnInit {
     },
   
     {
-      id : 'IDNext',
-     liveName : 'liveNameNext2',
-     channelName : 'channelName',
-     liveDate : 'liveDate',
+      id : '004',
+     liveName : 'como pegar mulher',
+     channelName : 'capitulo 1',
+     liveDate : '30/11/2023',
      liveTime : 'liveTime',
      liveLink : 'liveLink',
      registrationDate : 'registrationDate',

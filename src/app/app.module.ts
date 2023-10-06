@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import { LiveListComponent } from './views/home/live-list/live-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CommonModule } from '@angular/common';
     MatIconModule,
     MatButtonModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
