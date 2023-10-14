@@ -8,5 +8,5 @@ export class Live{
      liveTime!: string;
      liveLink!: string;
      registrationDate!: string;
-     urlSafe!: string;
+     urlSafe!: SafeResourceUrl;
 }

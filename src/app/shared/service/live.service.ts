@@ -19,6 +19,7 @@ export class LiveService {
         private httpClient: HttpClient) { }
   
     public getLivesWithFlag(flag: string): Observable<ResponsePageable> {
+      return this.httpClient.get<ResponsePageable>('https://run.mocky.io/v3/ebfa3d7f-d8f0-4979-ac08-13c8075fb2b8');
       return this.httpClient.get<ResponsePageable>(this.apiUrl + '?flag=' + flag);
     }
   }
